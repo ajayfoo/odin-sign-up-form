@@ -88,6 +88,7 @@ a[href]:hover {
     flex-direction: column;
     justify-content: center;
     font-size: clamp(0.9rem, 3vw, 1.8rem);
+    line-height: 100%;
 }
 
 .right>p {
@@ -103,6 +104,7 @@ a[href]:hover {
 .right>form>.input-fields {
     padding-top: clamp(0.2em, 50%, 0.4em);
     padding-left: clamp(1em, 50%, 2em);
+    padding-bottom: clamp(0.2em, 50%, 0.4em);
     background-color: rgb(90, 112, 93);
     display: flex;
     flex-wrap: wrap;
@@ -117,6 +119,7 @@ a[href]:hover {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
+    position: relative;
 }
 
 .input-field>label {
@@ -129,8 +132,30 @@ a[href]:hover {
     font-size: clamp(0.85rem, 2.7vw, 1.7rem);
     margin-bottom: 0.5em;
     background-color: rgb(138, 162, 77);
-    border: 0.1em solid rgb(52, 95, 53);
+    border: 0.1em solid rgb(92, 136, 92);
+}
 
+.input-field>input:focus {
+    outline: unset;
+    border: 0.1em solid rgb(30, 41, 32);
+}
+
+.input-field>input.error {
+    outline: unset;
+    border: 0.1em solid rgb(255, 0, 0);
+}
+
+.input-field>input+span {
+    position: absolute;
+    bottom: -0.5em;
+    left: 0.1em;
+}
+
+.input-field>input.error+span::after {
+    color: rgb(255, 0, 0);
+    content: "Passwords do not match";
+    text-shadow: 2px 2px 5px rgb(177, 174, 174);
+    font-size: clamp(1rem, 1.5vw, 2em);
 }
 
 .input-field>input::placeholder {

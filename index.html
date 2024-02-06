@@ -7,6 +7,7 @@
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -51,15 +52,15 @@
                 </p>
                 <p class="input-field">
                     <label for="password">Password</label>
-                    <input type="text" id="password" name="password" required placeholder="Your first name">
+                    <input type="text" id="password" name="password" required placeholder="*****">
                 </p>
                 <p class="input-field">
                     <label for="confirm-password">Confirm Password</label>
-                    <input type="text" id="confirm-password" name="confirm_password" required
-                        placeholder="Your first name">
+                    <input type="text" id="confirm-password" name="confirm_password" required placeholder="*****">
+                    <span></span>
                 </p>
             </div>
-            <button>Sign Up</button>
+            <button id="sign-up">Sign Up</button>
         </form>
         <p>Already have an account? <a href="#">Login</a></p>
     </div>
