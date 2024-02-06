@@ -16,6 +16,13 @@
     font-family: 'JollyLodger', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(30, 41, 32);
     letter-spacing: 0.05rem;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 
@@ -29,6 +36,7 @@ body {
     background-image: url("images/sidebar-bg.jpg");
     background-size: cover;
     display: flex;
+    justify-content: space-between;
 }
 
 header {
@@ -83,7 +91,7 @@ a[href]:hover {
 }
 
 .right>p {
-    width: clamp(55ch, 5vw, 75ch);
+    width: clamp(55ch, 5%, 75ch);
     padding-left: clamp(1em, 50%, 2em);
 }
 
@@ -133,7 +141,7 @@ form>button {
     font-family: inherit;
     font-size: clamp(0.85rem, 2.7vw, 1.7rem);
     margin: 1em 2em;
-    padding: 0.5em clamp(1em, 50%, 2em);
+    padding: 0.1em clamp(0.5em, 50%, 1em);
     background-color: rgb(218, 165, 32);
     border: none;
     border-radius: 7px;
