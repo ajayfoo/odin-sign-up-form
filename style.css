@@ -68,7 +68,7 @@ header>h1 {
     color: rgb(246 237 252);
 }
 
-.left>.credit>a[href]:hover {
+a[href]:hover {
     text-decoration: none;
 }
 
@@ -141,6 +141,6 @@ form>button {
     cursor: pointer;
 }
 
-footer>p {
-    margin: 0 clamp(1em, 50%, 2em);
+form+p>a[href] {
+    color: rgb(71 89 74);
 }
