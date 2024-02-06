@@ -155,7 +155,7 @@ a[href]:hover {
     color: rgb(139, 0, 0);
     content: "Passwords do not match";
     text-shadow: 2px 2px 5px rgb(219, 86, 86);
-    font-size: clamp(1rem, 1.5vw, 2em);
+    font-size: clamp(0.40rem, 2vw, 1.05rem);
 }
 
 .input-field>input::placeholder {
